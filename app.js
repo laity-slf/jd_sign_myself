@@ -28,6 +28,7 @@ async function sendNotify (text,desp) {
     uri:  'https://leom.me:30088/wechat-work-pusher/card',
     headers: { 'Cookie': `session=${serverT}`},
     form: {
+        to: 'BaiSiBuDeQiJie',
         title: text,
         description: desp,
         url: 'https://home.m.jd.com'
